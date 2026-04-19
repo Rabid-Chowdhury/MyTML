@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="favicons/desktopfavicon.ico">
+    <link rel="icon" type="image/png" href="favicons/mobilefavicon.png">
+    <link rel="apple-touch-icon" href="favicons/mobilefavicon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rabid | Contact</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+    body {
+      font-family: 'DM Sans', serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background: #f0f0f0;
+      color: #111;
+    }
+
+    header {
+      background: #fff;
+      padding: 15px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #111;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #4f46e5;
+    }
+
+    .box {
+      background: rgba(255,255,255,0.9);
+      padding: 20px;
+      border-radius: 10px;
+      margin: 40px auto;
+      max-width: 700px;
+      text-align: center;
+      font-family: DM Sans, serif;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      width: 100%;
+    }
+
+    button {
+      padding: 10px 20px;
+      border-radius: 10px;
+      background: #667eea;
+      color: #fff;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    button:hover {
+      background: #764ba2;
+    }
+
+    .button-style {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 10px;
+      background: rgba(39,39,39,0.6);
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+
+    .button-style:hover {
+      background: rgb(0, 0, 0);
+      transform: scale(1.04);
+    }
+    .send-button {
+            background:rgba(16, 16, 16, 0.474);
+            color: rgb(255, 255, 255);
+            border-radius: 10px;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            display: inline-block; 
+            margin: 15px;
+            transition: 0.2s;
+        }
+        .send-button:hover {
+            background: rgb(0, 0, 0);
+            transform: scale(1.00);
+        }
+        .send-button a {
+            color: white;
+            text-decoration: none;
+        }
+        .send-button a:hover {
+            text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="/home-page">Home</a>
+    <a href="/about">About</a>
+    <a href="/projects">Projects</a>
+    <a href="/contact">Contact</a>
+  </nav>
+</header>
+
+<div class="box">
+  <h2>Contact Me</h2>
+  <p>Fill out the form below to send me a message:</p>
+
+  <form action="/submitted">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" rows="5" required></textarea>
+    <button class="send-button" type="submit">Send</button>
+  </form>
+</div>
+
+</body>
+</html>

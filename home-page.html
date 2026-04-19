@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="favicons/desktopfavicon.ico">
+    <link rel="icon" type="image/png" href="favicons/mobilefavicon.png">
+    <link rel="apple-touch-icon" href="favicons/mobilefavicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="KNfNIOGvpxUJlNMBeT9MOtkKelI-1A1UyOVs1yXMJDI" />
+    <title>Rabid | Portfolio - MyTML</title>
+     <meta property="og:title" content="MyTML - Portfolio" />
+     <meta property="og:description" content="A portfolio made by me, Rabid." />
+     <meta name="theme-color" content="#7289da">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+        @keyframes FadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .fade-in {
+            animation: FadeIn 1s ease-out forwards;
+        }
+
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: #f0f0f0;
+            color: #111;
+        }
+
+        header {
+            background: #fff;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            background-color: #fff;
+            color: #000000;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 700px;
+            padding: 60px 20px;
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #111;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #0d00ff;
+        }
+
+        .button-style {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 10px;
+            background: rgba(39,39,39,0.6);
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        .button-style:hover {
+            background: rgba(0, 0, 0, 0.785);
+            transform: scale(1.04);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/home-page">Home</a>
+            <a href="/about">About</a>
+            <a href="/projects">Projects</a>
+            <a href="/contact">Contact</a>
+        </nav>
+    </header>
+    <div class="fade-in">
+        <div class="container">
+            <h1>Hi, I'm <span style="color: #2420ff;">Rabid</span></h1>
+            <p>Welcome to my portfolio. Explore my work and skills!</p>
+            <a href="/about" class="button-style">Learn About Me</a>
+            <a href="/projects" class="button-style">See Projects</a>
+        </div>
+    </div>
+</body>
+</html>

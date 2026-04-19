@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="favicons/desktopfavicon.ico">
+    <link rel="icon" type="image/png" href="favicons/mobilefavicon.png">
+    <link rel="apple-touch-icon" href="favicons/mobilefavicon.png">
+    <title>JavaScript Time - MyTML</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+        body {
+            background-color: #eaeaea;
+            font-family: "Space Grotesk", sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+            width: 500px;
+            box-sizing: border-box;
+            max-width: 555px;
+        }
+
+        .button-style {
+            background: rgba(16, 16, 16, 0.474);
+            color: white;
+            border-radius: 10px;
+            border: none;
+            padding: 10px 20px;
+            margin: 15px;
+            transition: 0.2s;
+            cursor: pointer;
+            font-family: 'DM Sans', sans-serif;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .button-style:hover {
+            background: black;
+            transform: scale(1.04);
+        }
+
+        .huge-heading {
+            font-size: 60px clamp(60px, 10vw, 100px);
+            font-weight: 900;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="window">
+    <div class="titlebar">
+        <div class="controls">
+            <div class="btn close"></div>
+            <div class="btn minimize"></div>
+            <div class="btn maximize"></div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <h1 class="huge-heading">JavaScript</h1>
+            <p id="changeTEXT">I will change to "Hello, World!" when the button below is clicked.</p>
+            <button class="button-style" onclick="changeText()">Click Me!</button>
+        </div>
+
+        <div class="container">
+            <p>I am learning JavaScript, slowly.</p>
+            <a href="second-page.html" class="button-style">Go Back</a>
+            <br>
+            <a href="fourth-page" class="button-style">Visit Fourth Page</a>
+        </div>
+    </div>
+</div>
+
+<script>
+    function changeText() {
+        var el = document.getElementById("changeTEXT");
+        el.innerHTML = "Hello, World!";
+        el.style.fontFamily = "'Space Mono', monospace";
+    }
+</script>
+</body>
+</html>
